@@ -1412,3 +1412,502 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/martin/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/" for 127.0.0.1 at 2019-04-17 09:13:49 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (61.7ms)
+Completed 200 OK in 6302ms (Views: 6256.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 09:14:05 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 159ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 09:14:40 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I60+JByNK9N9S8W7wCQRYiviwDy9NgRcCs5ym4LgJL4ciGFSdFP2beERrHNEIpa1uQRnWC5EltYh9cyR8eNxLQ==", "registrations"=>{"name"=>"Martin", "last_name"=>"Concha", "email"=>"martn.conchaa@gmail.com", "phone"=>"89789798", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 160ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 09:35:32 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 66ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 09:35:50 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zss+LTvi3syYwoLZOGb1h8FKNLGq1zXaz+FIfoyHjusG7lrYnHX3wITb66lVFQtXAAsUJyRWoSJfh+6hNOy9HA==", "registrations"=>{"name"=>"Martin", "last_name"=>"Concha", "email"=>"martn.conchaa@gmail.com", "phone"=>"89789798", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 145ms (ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/martin/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 09:52:48 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 855ms (Views: 825.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 09:52:56 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fFDMOFOViip0wyDsdHmMjpN1KGcEzUWi0fGXzwox7/a0dajN9AKjJmjaSZwZCnJeUjQI8YpM0VpBlzEQslrcAQ==", "registrations"=>{"name"=>"Martin", "last_name"=>"Concha", "email"=>"martn.conchaa@gmail.com", "phone"=>"89789798", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 125ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 09:53:11 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 84ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 09:53:13 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 10:08:34 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 129ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:08:58 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEVroYa7o7YzBw7ZkxEn3NE2k3WI5Du3fK+gmWiTkwyvYDTX7mV+CK9dZxEXF6ALQ9A0ERuWqT1XlB6TG5DGnw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin@gmail.com", "phone"=>"98989989", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: registration_controller):
+  
+app/controllers/registrations_controller.rb:21:in `user_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:09:27 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEVroYa7o7YzBw7ZkxEn3NE2k3WI5Du3fK+gmWiTkwyvYDTX7mV+CK9dZxEXF6ALQ9A0ERuWqT1XlB6TG5DGnw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin@gmail.com", "phone"=>"98989989", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: registration):
+  
+app/controllers/registrations_controller.rb:21:in `user_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:10:51 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEVroYa7o7YzBw7ZkxEn3NE2k3WI5Du3fK+gmWiTkwyvYDTX7mV+CK9dZxEXF6ALQ9A0ERuWqT1XlB6TG5DGnw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin@gmail.com", "phone"=>"98989989", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: registration):
+  
+app/controllers/registrations_controller.rb:21:in `registration_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:12:20 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEVroYa7o7YzBw7ZkxEn3NE2k3WI5Du3fK+gmWiTkwyvYDTX7mV+CK9dZxEXF6ALQ9A0ERuWqT1XlB6TG5DGnw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin@gmail.com", "phone"=>"98989989", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/registrations_controller.rb:21:in `registration_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:14:30 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEVroYa7o7YzBw7ZkxEn3NE2k3WI5Du3fK+gmWiTkwyvYDTX7mV+CK9dZxEXF6ALQ9A0ERuWqT1XlB6TG5DGnw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin@gmail.com", "phone"=>"98989989", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/registrations_controller.rb:21:in `registration_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:14:53 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEVroYa7o7YzBw7ZkxEn3NE2k3WI5Du3fK+gmWiTkwyvYDTX7mV+CK9dZxEXF6ALQ9A0ERuWqT1XlB6TG5DGnw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin@gmail.com", "phone"=>"98989989", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "martin@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 246ms (Views: 121.5ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:15:14 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+QhmVwm8T1jkNYqyxRz+/wJYqJJSkgKQtJ1c687C2zIxLQKiritmVPgs48KobwAvwxmIBNwTlmgk+/o0dqnoxQ==", "registrations"=>{"name"=>"sa", "last_name"=>"dsa", "email"=>"martin@gmail.com", "phone"=>"123456789", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "martin@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "sa"], ["last_name", "dsa"], ["email", "martin@gmail.com"], ["phone", "123456789"], ["password", "12345678"], ["created_at", "2019-04-17 14:15:14.410708"], ["updated_at", "2019-04-17 14:15:14.410708"]]
+  [1m[35m (89.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 116ms (ActiveRecord: 94.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 10:15:14 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 84ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-04-17 10:15:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NRrLXJuxuktqPJxEyk3jEao9cdkKb9dWrS6Hu2Ws/ej9P6+pPCaTR3Yl9TSnPh3Ba3xRT4TuQ649SCFk3cfOHw==", "session"=>{"email"=>"martin@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 133ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 10:17:43 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 91ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:17:58 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JVEwaNupoRXb+vEVVu4ZNXMamRbWcoGd3iR2j5jS7FoadG8es3d8q0egmN3S6J7i4fw+ckUAExf1H8iF69G5yQ==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"m", "phone"=>"m", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "m"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 136ms (Views: 107.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:22:08 -0400
+  
+SyntaxError (/home/martin/Desktop/lab-assignment-6-MartinConcha/app/controllers/registrations_controller.rb:29: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/registrations_controller.rb:29: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:22:27 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 818ms (ActiveRecord: 2.3ms)
+
+
+  
+NameError (undefined local variable or method `horse_params' for #<RegistrationsController:0x00007f1941e97080>):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:23:10 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 3.4ms)
+
+
+  
+NoMethodError (undefined method `create' for #<User:0x00007f19419ef500>
+Did you mean?  created_at):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:23:34 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 2.2ms)
+
+
+  
+NoMethodError (undefined method `new' for #<User:0x00007f193c265028>):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:25:10 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (10.0ms)
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 151ms (Views: 81.7ms | ActiveRecord: 3.5ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/registrations_controller.rb:20:in `block (2 levels) in create'
+app/controllers/registrations_controller.rb:15:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:26:11 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (10.9ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 406 Not Acceptable in 135ms (Views: 68.1ms | ActiveRecord: 5.1ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/registrations_controller.rb:15:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:26:43 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (4.9ms)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Completed 406 Not Acceptable in 98ms (Views: 70.3ms | ActiveRecord: 1.5ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/registrations_controller.rb:15:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:26:49 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (7.5ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 406 Not Acceptable in 117ms (Views: 95.1ms | ActiveRecord: 1.4ms)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/registrations_controller.rb:15:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:27:27 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8u4JqLIPCb7bEQqIF/TB3owUtVLHojnqNfhTBWcpOYI6y21dFZggsscIY/h6hz8OTVWVxEkjrRKlnvXa30IKdQ==", "registrations"=>{"name"=>"a", "last_name"=>"a", "email"=>"a", "phone"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 143ms (Views: 75.8ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:27:36 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Znlp5XKL8RiAK8woUOY6R8Sk3cb0VasBeUbrR5FuPjyuXA0Q1RzYFJwypVg9lcSXBeX9UHrUP/npIE2YKQUNyw==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"m", "phone"=>"m", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "m"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 88ms (Views: 71.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:29:55 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nvQpmPX0+E3doxfwRSqnulMNnIQC0MSNSDcxDPb6jIFW0U1tUmPRQcG6foAoWVlqkky8EoxRUHXYUZfTTpG/dg==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"martin1@gmail.com", "phone"=>"123456789", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "martin1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "m"], ["last_name", "m"], ["email", "martin1@gmail.com"], ["phone", "123456789"], ["password", "12345678"], ["created_at", "2019-04-17 14:29:55.459888"], ["updated_at", "2019-04-17 14:29:55.459888"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 26ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 10:29:55 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 10:33:55 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 133ms (Views: 74.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:33:58 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B403N9Hey+rw/JH4a7bAQSdiNythYgCTFLtTUAd85R04qGhBuQAWVGym+DDvsEeWtYSQT/IQkhk/gO1adH+wjg==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 107ms (Views: 88.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:34:12 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j75Rmw2N7NI/CPABv3ydG0wZEL+ojEOzjLMwnp8ytIFHmzVuqhrF3iMRmXHSD2PLjVgwKSYN10sc1ZZBJ1mHdg==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 99ms (Views: 75.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:34:23 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P3SfbeOU3mAYKv8HN36OsHkA6k3RCLxJ3Ksput+obMv3UfuYRAP3bAQzlndaDXBguEHK21+JKLFMzY9lZ8NfPA==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 142ms (Views: 102.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:44:43 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsdKQtooS2C88fBnr0eRDnttTDgYfpK56Q3i3CsqOWRK4i63fb9ibKDomRfCNG/euixsrpb/BkF5a0QDk0EKkw==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (4.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 132ms (Views: 101.5ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:47:17 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4qfYv5WnVLQJfF3ECawIQxFRF0wMt0IgNDHUo5t2ltYqgrxKMjB9uBVlNLRk3/aT0BA32oI21tikV3J8Ix2lIQ==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"m@gmail.com", "phone"=>"123456789", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "m@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "m"], ["last_name", "m"], ["email", "m@gmail.com"], ["phone", "123456789"], ["password", "12345678"], ["created_at", "2019-04-17 14:47:17.157344"], ["updated_at", "2019-04-17 14:47:17.157344"]]
+  [1m[35m (35.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 55ms (ActiveRecord: 37.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 10:47:17 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 68ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:47:58 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4qfYv5WnVLQJfF3ECawIQxFRF0wMt0IgNDHUo5t2ltYqgrxKMjB9uBVlNLRk3/aT0BA32oI21tikV3J8Ix2lIQ==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"m1@gmail.com", "phone"=>"123456789", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "m1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "m"], ["last_name", "m"], ["email", "m1@gmail.com"], ["phone", "123456789"], ["password", "12345678"], ["created_at", "2019-04-17 14:47:58.569341"], ["updated_at", "2019-04-17 14:47:58.569341"]]
+  [1m[35m (44.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 65ms (ActiveRecord: 46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 10:47:58 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from instance_eval at /home/martin/.rvm/gems/ruby-2.5.1/gems/activesupport-5.2.3/lib/active_support/lazy_load_hooks.rb:71)
+Started GET "/sign_in" for 127.0.0.1 at 2019-04-17 10:58:09 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 832ms (Views: 755.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2019-04-17 10:58:35 -0400
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kQZF+0mikUXBYCOgR3DiVoMmD7/O+jW4yjLa9DAcgBJZIyEO7jW4Sd15StAqAxyGQmcvKUB7oUBaVHwriHez5Q==", "registrations"=>{"name"=>"m", "last_name"=>"m", "email"=>"m2@gmail.com", "phone"=>"123456789", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "m2@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "m"], ["last_name", "m"], ["email", "m2@gmail.com"], ["phone", "123456789"], ["password", "12345678"], ["created_at", "2019-04-17 14:58:35.519598"], ["updated_at", "2019-04-17 14:58:35.519598"]]
+  [1m[35m (20.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 46ms (ActiveRecord: 22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 10:58:35 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 82ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-04-17 11:07:08 -0400
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-17 11:07:09 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 72ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+

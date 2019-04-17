@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @user = User.find(params[:id])
   end
 
   # GET /users/new
@@ -20,24 +21,45 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @user = User.find(params[:id])
   end
 
   # POST /users
   # POST /users.json
   def create
-    #complete this method
+    @user = User.new(user_params)
+    if @user.save(registration_params)
+      flash[:notice] = "Successfully created."
+      redirect_to @user
+    else
+      flash[:error] = "Cannot create this user."
+      render :new
+    end
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    #complete this method
+    @user = User.find(params[:id])
+    if @user.save(registration_params)
+      flash[:notice] = "Successfully created."
+      redirect_to @user
+    else
+      flash[:error] = "Cannot create this user."
+      render :edit
+    end
   end
 
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
     #complete this method
+    @user = User.find(params[:id])
+    @user.destroy
+    respond_to do |format|
+      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
 
   private
