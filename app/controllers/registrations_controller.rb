@@ -7,9 +7,9 @@ class RegistrationsController < ApplicationController
 	    @user = User.new(registration_params)
 	    if @user.save(registration_params)
 	    	flash[:notice] = "Successfully created."
-	    	redirect_to 'http://localhost:3000'
+	    	redirect_to root_url
 	    else
-	    	flash[:error] = "Cannot create this user."
+	    	flash.now[:error] = "Cannot create this user."
 	    	render :new
 	    end
 	end

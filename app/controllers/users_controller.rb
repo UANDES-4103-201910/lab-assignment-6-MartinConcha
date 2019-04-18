@@ -28,7 +28,8 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    if @user.save(registration_params)
+    if @user.save(user_params)
+      log_in @user
       flash[:notice] = "Successfully created."
       redirect_to @user
     else
@@ -41,11 +42,11 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     @user = User.find(params[:id])
-    if @user.save(registration_params)
-      flash[:notice] = "Successfully created."
+    if @user.update(user_params)
+      flash[:notice] = "Successfully updated."
       redirect_to @user
     else
-      flash[:error] = "Cannot create this user."
+      flash[:error] = "Cannot update this user."
       render :edit
     end
   end
@@ -56,9 +57,9 @@ class UsersController < ApplicationController
     #complete this method
     @user = User.find(params[:id])
     @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
-      format.json { head :no_content }
+    if @user.destroy
+      flash[:notice] = "Successfully destroyed."
+      redirect_to @user
     end
   end
 
